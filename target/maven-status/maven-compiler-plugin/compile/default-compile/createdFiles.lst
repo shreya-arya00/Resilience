@@ -1,0 +1,4 @@
+com/example/demo/MyProjectApplication.class
+com/example/demo/config/AppConfig.class
+com/example/demo/service/MyService.class
+com/example/demo/controller/MyController.class

@@ -1,0 +1,17 @@
+spring:
+  application:
+    name: my-spring-cloud-resilience4j
+
+resilience4j:
+  circuitbreaker:
+    instances:
+      myServiceCircuitBreaker:
+        registerHealthIndicator: true
+        ringBufferSizeInClosedState: 5
+        ringBufferSizeInHalfOpenState: 3
+        waitDurationInOpenState: 10s
+  retry:
+    instances:
+      myServiceRetry:
+        maxAttempts: 5
+        waitDuration: 2s
